@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Irs light';
+  src: url('./assets/fonts/IRANSansX-Light.woff2') format('trueType');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Irs medium';
+  src: url('./assets/fonts/IRANSansX-Medium.woff2') format('trueType');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Irs bold';
+  src: url('./assets/fonts/IRANSansX-Bold.woff2') format('trueType');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Irs';
+  src: url('./assets/fonts/IRANSansX-Regular.woff2') format('trueType');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Irs numeric';
+  src: url('./assets/fonts/IRANSansXFaNum-Regular.woff2') format('trueType');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Irs numeric bold';
+  src: url('./assets/fonts/IRANSansXFaNum-Bold.woff2') format('trueType');
+  font-display: swap;
+}
+
+@layer base {
+  /* --gradient: #35c3f3 0%, #8b9fe8 20%, #e681d8 39%, #ffa9a4 76%, #fed2ce 100%; */
+}
+
+.landing-p {
+  @apply w-1/2 h-8 text-lg relative overflow-hidden animation-delay-800;
+}
+.battery-li {
+  @apply opacity-0 w-full h-[5rem] bg-gradient-to-r from-blue-600 via-purple-500  to-pink-500;
+}
+.landing-span {
+  @apply absolute animate-moveUp font-isLight bg-gradient-to-bl from-blue-400 via-purple-500  to-pink-500 bg-clip-text;
+}
+
+.bg-clip-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
